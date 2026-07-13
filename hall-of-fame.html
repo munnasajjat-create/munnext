@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hall of Fame | MunNext</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+overflow-x:hidden;
+}
+
+/* Navigation */
+
+header{
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+background:#0D47A1;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:800;
+
+color:white;
+
+}
+
+.logo span{
+
+color:#FFD54F;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:18px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#FFD54F;
+
+}
+
+/* Hero */
+
+.hero{
+
+height:90vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+background:
+
+linear-gradient(rgba(10,35,99,.85),rgba(13,71,161,.85)),
+
+url("images/hall-bg.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+font-weight:800;
+
+animation:fadeDown 1s;
+
+}
+
+.hero p{
+
+margin-top:20px;
+
+font-size:22px;
+
+animation:fadeUp 1.2s;
+
+}
+
+.hero .btn{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:18px 40px;
+
+background:#FFD54F;
+
+color:#111;
+
+font-weight:bold;
+
+text-decoration:none;
+
+border-radius:10px;
+
+transition:.4s;
+
+}
+
+.hero .btn:hover{
+
+transform:scale(1.08);
+
+}
+
+/* Statistics */
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+padding:80px 8%;
+
+}
+
+.stat{
+
+background:white;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:18px;
+
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.stat:hover{
+
+transform:translateY(-10px);
+
+}
+
+.stat h2{
+
+font-size:45px;
+
+color:#0D47A1;
+
+}
+
+.stat p{
+
+margin-top:10px;
+
+font-weight:600;
+
+}
+
+/* Section */
+
+.section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:42px;
+
+color:#0D47A1;
+
+margin-bottom:60px;
+
+}
+
+/* Categories */
+
+.categories{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.category{
+
+background:white;
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.category:hover{
+
+transform:translateY(-10px) scale(1.03);
+
+background:#0D47A1;
+
+color:white;
+
+}
+
+.category h2{
+
+margin-bottom:15px;
+
+}
+
+/* animation */
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Mun<span>Next</span>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="founder.html">Founder</a>
+
+<a href="about.html">About</a>
+
+<a href="courses.html">Courses</a>
+
+<a href="admission.html">Admission</a>
+
+<a href="hall-of-fame.html">Hall of Fame</a>
+
+<a href="achievements.html">Achievements</a>
+
+<a href="challenge.html">MunNext Challenge</a>
+
+<a href="gallery.html">Gallery</a>
+
+<a href="notice.html">Notice</a>
+
+<a href="results.html">Results</a>
+
+<a href="blog.html">Blog</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>
+
+🏆 Hall of Fame
+
+</h1>
+
+<p>
+
+Celebrating Excellence • Inspiring Future Leaders
+
+</p>
+
+<a href="#winners" class="btn">
+
+Meet Our Champions
+
+</a>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+
+<h2>06</h2>
+
+<p>Hall of Fame Members</p>
+
+</div>
+
+<div class="stat">
+
+<h2>50+</h2>
+
+<p>Achievements</p>
+
+</div>
+
+<div class="stat">
+
+<h2>10+</h2>
+
+<p>Badge Categories</p>
+
+</div>
+
+<div class="stat">
+
+<h2>01</h2>
+
+<p>Global Ambassador</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h1 class="title">
+
+Achievement Categories
+
+</h1>
+
+<div class="categories">
+
+<div class="category">
+
+<h2>👑 Grammar Series</h2>
+
+<p>Grammar Hero • King • Titan • Legend</p>
+
+</div>
+
+<div class="category">
+
+<h2>📚 Vocabulary Series</h2>
+
+<p>Hero • Beast • Titan • Emperor</p>
+
+</div>
+
+<div class="category">
+
+<h2>🌟 Leadership</h2>
+
+<p>Future Leader • All-Rounder • Student Leader</p>
+
+</div>
+
+<div class="category">
+
+<h2>🏆 Academic Awards</h2>
+
+<p>Scholarship • Top Scorer • GPA Club</p>
+
+</div>
+
+<div class="category">
+
+<h2>🌍 International</h2>
+
+<p>Global Ambassador</p>
+
+</div>
+
+<div class="category">
+
+<h2>🎮 MunNext Challenge</h2>
+
+<p>Coming Soon</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PART 2 STARTS HERE --><section class="section" id="winners">
+
+<h1 class="title">
+🌟 Meet Our Champions
+</h1>
+
+<style>
+
+.winner-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+gap:35px;
+
+}
+
+.winner{
+
+background:rgba(255,255,255,.85);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+transition:.5s;
+
+position:relative;
+
+}
+
+.winner:hover{
+
+transform:translateY(-15px) scale(1.02);
+
+box-shadow:0 25px 45px rgba(0,0,0,.25);
+
+}
+
+.winner img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+}
+
+.badge{
+
+position:absolute;
+
+top:15px;
+
+right:15px;
+
+background:gold;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+}
+
+.content{
+
+padding:25px;
+
+}
+
+.content h2{
+
+color:#0D47A1;
+
+margin-bottom:10px;
+
+}
+
+.content h3{
+
+color:#ff9800;
+
+margin-bottom:15px;
+
+}
+
+.info{
+
+margin:10px 0;
+
+}
+
+.share{
+
+display:flex;
+
+gap:10px;
+
+margin-top:20px;
+
+flex-wrap:wrap;
+
+}
+
+.share a{
+
+flex:1;
+
+text-align:center;
+
+padding:12px;
+
+background:#0D47A1;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.share a:hover{
+
+background:#1976D2;
+
+}
+
+.placeholder{
+
+color:#777;
+
+font-style:italic;
+
+}
+
+</style>
+
+<div class="winner-grid">
+
+<!-- ===================== -->
+
+<div class="winner">
+
+<div class="badge">
+
+👑 Grammar King
+
+</div>
+
+<img src="images/mahir.jpg">
+
+<div class="content">
+
+<h2>Mahir</h2>
+
+<h3>Class 9</h3>
+
+<p><b>School:</b> Parzowar Kalindi Multipurpose High School (PKHS)</p>
+
+<p><b>Achievement:</b> Outstanding Grammar Performance</p>
+
+<p class="placeholder"><b>Favourite Subject:</b> __________</p>
+
+<p class="placeholder"><b>Future Dream:</b> __________</p>
+
+<p class="placeholder"><b>Teacher's Comment:</b> ______________________</p>
+
+<p class="placeholder"><b>Student Quote:</b> ______________________</p>
+
+<div class="share">
+
+<a href="#">📄 Profile</a>
+
+<a href="#">🎉 Share</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="winner">
+
+<div class="badge">
+
+📚 Vocabulary Beast
+
+</div>
+
+<img src="images/rian.jpg">
+
+<div class="content">
+
+<h2>Rian Mahmud Ovi</h2>
+
+<h3>Class 8</h3>
+
+<p><b>School:</b> PKHS</p>
+
+<p><b>Achievement:</b> Outstanding Vocabulary Growth</p>
+
+<p class="placeholder"><b>Favourite Subject:</b> __________</p>
+
+<p class="placeholder"><b>Dream:</b> __________</p>
+
+<p class="placeholder"><b>Teacher:</b> __________</p>
+
+<p class="placeholder"><b>Quote:</b> __________</p>
+
+<div class="share">
+
+<a href="#">📄 Profile</a>
+
+<a href="#">🎉 Share</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="winner">
+
+<div class="badge">
+
+🌟 All-Rounder
+
+</div>
+
+<img src="images/yeasin.jpg">
+
+<div class="content">
+
+<h2>Yeasin Arafat</h2>
+
+<h3>Class 8</h3>
+
+<p><b>School:</b> PKHS</p>
+
+<p><b>Achievement:</b> Excellent Performance in Every Area</p>
+
+<p class="placeholder"><b>Favourite Subject:</b> ________</p>
+
+<p class="placeholder"><b>Dream:</b> ________</p>
+
+<p class="placeholder"><b>Teacher:</b> ________</p>
+
+<p class="placeholder"><b>Quote:</b> ________</p>
+
+<div class="share">
+
+<a href="#">📄 Profile</a>
+
+<a href="#">🎉 Share</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="winner">
+
+<div class="badge">
+
+🚀 Future Leader
+
+</div>
+
+<img src="images/atique.jpg">
+
+<div class="content">
+
+<h2>Atiqul</h2>
+
+<h3>Class 8</h3>
+
+<p><b>School:</b> PKHS</p>
+
+<p><b>Achievement:</b> Leadership & Responsibility</p>
+
+<p class="placeholder"><b>Favourite Subject:</b> ________</p>
+
+<p class="placeholder"><b>Dream:</b> ________</p>
+
+<p class="placeholder"><b>Teacher:</b> ________</p>
+
+<p class="placeholder"><b>Quote:</b> ________</p>
+
+<div class="share">
+
+<a href="#">📄 Profile</a>
+
+<a href="#">🎉 Share</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="winner">
+
+<div class="badge">
+
+📅 Regular Student
+
+</div>
+
+<img src="images/marjan.jpg">
+
+<div class="content">
+
+<h2>Marjan</h2>
+
+<h3>SSC 2027</h3>
+
+<p><b>School:</b> PKHS</p>
+
+<p><b>Achievement:</b> Outstanding Attendance & Consistency</p>
+
+<p class="placeholder"><b>Favourite Subject:</b> ________</p>
+
+<p class="placeholder"><b>Dream:</b> ________</p>
+
+<p class="placeholder"><b>Teacher:</b> ________</p>
+
+<p class="placeholder"><b>Quote:</b> ________</p>
+
+<div class="share">
+
+<a href="#">📄 Profile</a>
+
+<a href="#">🎉 Share</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="winner">
+
+<div class="badge">
+
+🌍 Global Ambassador
+
+</div>
+
+<img src="images/chowa.jpg">
+
+<div class="content">
+
+<h2>Chowa</h2>
+
+<h3>Malaysia 🇲🇾</h3>
+
+<p><b>School:</b> Chunkutia Girls' School</p>
+
+<p><b>College:</b> Badrunnesa Government Girls' College</p>
+
+<p><b>Current:</b> Reputed University in Malaysia</p>
+
+<p><b>Achievement:</b> Inspiring students through international academic success.</p>
+
+<p class="placeholder"><b>University:</b> __________</p>
+
+<p class="placeholder"><b>Dream:</b> __________</p>
+
+<p class="placeholder"><b>Message to Juniors:</b> __________</p>
+
+<div class="share">
+
+<a href="#">📄 Profile</a>
+
+<a href="#">🎉 Share</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PART 3 STARTS HERE ================= --><!-- ================= WALL OF LEGENDS ================= -->
+
+<section class="section" style="background:#eef5ff;">
+
+<h1 class="title">
+🏛 Wall of Legends
+</h1>
+
+<p style="text-align:center;font-size:20px;max-width:900px;margin:auto;margin-bottom:50px;">
+
+The Wall of Legends recognises students who demonstrate excellence in academics, leadership, discipline, English communication, creativity and character. Every achievement is a milestone towards becoming a future leader.
+
+</p>
+
+<div class="categories">
+
+<div class="category">
+
+<h2>👑 Grammar Series</h2>
+
+<p>
+
+Grammar Hero<br>
+
+Grammar King<br>
+
+Grammar Titan<br>
+
+Grammar Legend<br>
+
+Grammar Emperor
+
+</p>
+
+</div>
+
+<div class="category">
+
+<h2>📚 Vocabulary Series</h2>
+
+<p>
+
+Vocabulary Hero<br>
+
+Vocabulary Beast<br>
+
+Vocabulary Titan<br>
+
+Vocabulary Legend<br>
+
+Vocabulary Emperor
+
+</p>
+
+</div>
+
+<div class="category">
+
+<h2>🎤 Speaking Series</h2>
+
+<p>
+
+Speaking Star<br>
+
+Speaking Hero<br>
+
+Speaking Champion<br>
+
+Speaking Titan<br>
+
+Speaking Legend
+
+</p>
+
+</div>
+
+<div class="category">
+
+<h2>✍ Writing Series</h2>
+
+<p>
+
+Writing Hero<br>
+
+Writing Wizard<br>
+
+Essay Champion<br>
+
+Creative Writer<br>
+
+Writing Legend
+
+</p>
+
+</div>
+
+<div class="category">
+
+<h2>📖 Reading Series</h2>
+
+<p>
+
+Reading Hero<br>
+
+Reading Champion<br>
+
+Bookworm<br>
+
+Reading Titan
+
+</p>
+
+</div>
+
+<div class="category">
+
+<h2>🏆 Academic Series</h2>
+
+<p>
+
+Top Scorer<br>
+
+Scholarship Winner<br>
+
+GPA Club<br>
+
+Academic Champion<br>
+
+Subject Topper
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= LEVEL SYSTEM ================= -->
+
+<section class="section">
+
+<h1 class="title">
+
+⭐ MunNext Level System
+
+</h1>
+
+<div class="winner-grid">
+
+<div class="winner">
+
+<div class="content">
+
+<h2>🏅 Student Levels</h2>
+
+<p>
+
+Level 1 – Beginner<br>
+
+Level 2 – Learner<br>
+
+Level 3 – Explorer<br>
+
+Level 4 – Achiever<br>
+
+Level 5 – Champion<br>
+
+Level 6 – Hero<br>
+
+Level 7 – Master<br>
+
+Level 8 – Titan<br>
+
+Level 9 – Legend<br>
+
+Level 10 – Immortal
+
+</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>🪙 MunCoins</h2>
+
+<p>
+
+Homework ✔<br>
+
+Attendance ✔<br>
+
+Quiz ✔<br>
+
+Speaking ✔<br>
+
+Grammar ✔<br>
+
+Vocabulary ✔<br>
+
+Helping Friends ✔<br>
+
+Winning Competitions ✔
+
+</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>⭐ XP Points</h2>
+
+<p>
+
+Every activity earns XP.
+
+Unlock badges.
+
+Reach higher levels.
+
+Enter the Hall of Fame.
+
+Become a MunNext Legend.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GLOBAL SUCCESS ================= -->
+
+<section class="section" style="background:#eef5ff;">
+
+<h1 class="title">
+
+🌍 Our Students Around The World
+
+</h1>
+
+<div class="winner-grid">
+
+<div class="winner">
+
+<div class="content">
+
+<h2>🇲🇾 Malaysia</h2>
+
+<h3>Chowa</h3>
+
+<p>
+
+Chunkutia Girls' School
+
+</p>
+
+<p>
+
+Badrunnesa Government Girls' College
+
+</p>
+
+<p>
+
+Currently studying at
+
+<strong>____________ University</strong>
+
+</p>
+
+<p>
+
+Global Ambassador
+
+</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>🇬🇧 United Kingdom</h2>
+
+<p class="placeholder">
+
+Future MunNext Student
+
+</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>🇨🇦 Canada</h2>
+
+<p class="placeholder">
+
+Future MunNext Student
+
+</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>🇦🇺 Australia</h2>
+
+<p class="placeholder">
+
+Future MunNext Student
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ACHIEVEMENT PROGRESS ================= -->
+
+<section class="section">
+
+<h1 class="title">
+
+🎯 Unlock Your Next Badge
+
+</h1>
+
+<div class="winner-grid">
+
+<div class="winner">
+
+<div class="content">
+
+<h2>Grammar Hero</h2>
+
+<progress value="80" max="100" style="width:100%;height:25px;"></progress>
+
+<p>80% Completed</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>Vocabulary Beast</h2>
+
+<progress value="55" max="100" style="width:100%;height:25px;"></progress>
+
+<p>55% Completed</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>Future Leader</h2>
+
+<progress value="35" max="100" style="width:100%;height:25px;"></progress>
+
+<p>35% Completed</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PART 4 STARTS HERE ================= --><!-- ================= PART 4 STARTS HERE ================= -->
+
+<!-- ================= Celebrate Achievement ================= -->
+
+<section class="section" style="background:linear-gradient(135deg,#0D47A1,#1565C0);color:white;">
+
+<h1 class="title" style="color:white;">
+🎉 Celebrate My Achievement
+</h1>
+
+<p style="text-align:center;max-width:900px;margin:auto;font-size:20px;line-height:1.8;">
+
+Every achievement deserves celebration. MunNext encourages students to proudly share their success and inspire others to dream bigger.
+
+</p>
+
+<div class="winner-grid" style="margin-top:50px;">
+
+<div class="winner">
+
+<div class="content">
+
+<h2>📤 Share Achievement</h2>
+
+<p>
+
+Share your success with friends and family.
+
+</p>
+
+<div class="share">
+
+<a href="#">Facebook</a>
+
+<a href="#">WhatsApp</a>
+
+<a href="#">Messenger</a>
+
+<a href="#">Copy Link</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>📥 Download</h2>
+
+<p>
+
+Download your Achievement Card
+
+</p>
+
+<div class="share">
+
+<a href="#">Achievement Card</a>
+
+<a href="#">Certificate</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>🔐 Verification</h2>
+
+<p>
+
+Certificate Number
+
+______________
+
+</p>
+
+<p>
+
+QR Code
+
+(Coming Soon)
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Parent & Teacher ================= -->
+
+<section class="section">
+
+<h1 class="title">
+
+❤️ Parents & Teachers
+
+</h1>
+
+<div class="winner-grid">
+
+<div class="winner">
+
+<div class="content">
+
+<h2>👨‍🏫 Teacher's Recommendation</h2>
+
+<p class="placeholder">
+
+Write your recommendation here...
+
+</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>❤️ Parent's Message</h2>
+
+<p class="placeholder">
+
+Parent's appreciation...
+
+</p>
+
+</div>
+
+</div>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>🌟 Student's Dream</h2>
+
+<p class="placeholder">
+
+Write future ambition...
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Become Next Winner ================= -->
+
+<section class="section" style="background:#FFD54F;">
+
+<h1 class="title">
+
+🏆 Become the Next Hall of Fame Student
+
+</h1>
+
+<p style="text-align:center;font-size:22px;max-width:900px;margin:auto;">
+
+Work hard.
+
+Stay disciplined.
+
+Complete challenges.
+
+Earn badges.
+
+Join the Hall of Fame.
+
+Your success story could inspire the next generation of MunNext students.
+
+</p>
+
+<div style="text-align:center;margin-top:40px;">
+
+<a href="admission.html" class="btn">
+
+Apply for Admission
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= Founder Message ================= -->
+
+<section class="section">
+
+<h1 class="title">
+
+👨‍🏫 Message from the Founder
+
+</h1>
+
+<div class="winner">
+
+<div class="content">
+
+<h2>
+
+Md. Taherul Islam Munna
+
+</h2>
+
+<p class="placeholder">
+
+Write your personal message to students...
+
+</p>
+
+<p class="placeholder">
+
+Your educational philosophy...
+
+</p>
+
+<p class="placeholder">
+
+Your vision for MunNext...
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Footer ================= -->
+
+<footer style="background:#0D47A1;color:white;padding:60px 8%;">
+
+<div class="winner-grid">
+
+<div>
+
+<h2>MunNext</h2>
+
+<p>
+
+Learn • Grow • Succeed
+
+</p>
+
+<p>
+
+Empowering students through education, achievements and innovation.
+
+</p>
+
+</div>
+
+<div>
+
+<h2>Quick Links</h2>
+
+<p>Home</p>
+
+<p>Courses</p>
+
+<p>Hall of Fame</p>
+
+<p>MunNext Challenge</p>
+
+<p>Admission</p>
+
+<p>Contact</p>
+
+</div>
+
+<div>
+
+<h2>Future Features</h2>
+
+<p>AI Tutor</p>
+
+<p>Student Login</p>
+
+<p>Teacher Dashboard</p>
+
+<p>Leaderboards</p>
+
+<p>Certificates</p>
+
+<p>Achievements</p>
+
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:50px;border-top:1px solid rgba(255,255,255,.3);padding-top:25px;">
+
+© 2026 MunNext | All Rights Reserved
+
+</div>
+
+</footer>
+
+<!-- ================= Floating Trophy ================= -->
+
+<div style="position:fixed;bottom:25px;right:25px;font-size:45px;animation:float 3s infinite;cursor:pointer;">
+
+🏆
+
+</div>
+
+<style>
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+</body>
+
+</html>
