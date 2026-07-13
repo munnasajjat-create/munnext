@@ -1,571 +1,1091 @@
-/* ==========================================
-   MunNext Premium Animation System v1.0
-========================================== */
+/*==================================================
+  MUNNEXT ANIMATIONS v1.0
+  Premium Animation Library
+==================================================*/
 
 
-/* ===============================
-   FADE ANIMATIONS
-================================ */
-
-
-.fade-up{
-
-    animation:fadeUp 1s ease forwards;
-
-}
-
-
-.fade-down{
-
-    animation:fadeDown 1s ease forwards;
-
-}
-
-
-.fade-left{
-
-    animation:fadeLeft 1s ease forwards;
-
-}
-
-
-.fade-right{
-
-    animation:fadeRight 1s ease forwards;
-
-}
-
-
+/*==================================
+  FADE UP
+==================================*/
 
 @keyframes fadeUp{
 
-from{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
 
-opacity:0;
-
-transform:translateY(50px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 
 }
 
+.fade-up{
+
+    animation:fadeUp .8s ease forwards;
+
 }
 
 
+
+/*==================================
+  FADE DOWN
+==================================*/
 
 @keyframes fadeDown{
 
-from{
+    from{
 
-opacity:0;
+        opacity:0;
 
-transform:translateY(-50px);
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
 
-to{
+.fade-down{
 
-opacity:1;
-
-transform:translateY(0);
-
-}
+    animation:fadeDown .8s ease forwards;
 
 }
 
 
 
+/*==================================
+  FADE LEFT
+==================================*/
 
 @keyframes fadeLeft{
 
-from{
+    from{
 
-opacity:0;
+        opacity:0;
 
-transform:translateX(-60px);
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
 
 }
 
-to{
+.fade-left{
 
-opacity:1;
-
-transform:translateX(0);
-
-}
+    animation:fadeLeft .9s ease forwards;
 
 }
 
 
 
+/*==================================
+  FADE RIGHT
+==================================*/
 
 @keyframes fadeRight{
 
-from{
+    from{
 
-opacity:0;
+        opacity:0;
 
-transform:translateX(60px);
+        transform:translateX(60px);
 
-}
+    }
 
-to{
+    to{
 
-opacity:1;
+        opacity:1;
 
-transform:translateX(0);
+        transform:translateX(0);
 
-}
-
-}
-
-
-
-
-/* ===============================
-   FLOATING EFFECT
-================================ */
-
-
-.float{
-
-animation:floating 4s infinite ease-in-out;
+    }
 
 }
 
+.fade-right{
+
+    animation:fadeRight .9s ease forwards;
+
+}
+
+
+
+/*==================================
+  ZOOM IN
+==================================*/
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.zoom-in{
+
+    animation:zoomIn .7s ease forwards;
+
+}
+
+
+
+/*==================================
+  FLOAT
+==================================*/
 
 @keyframes floating{
 
+    0%{
 
-0%{
+        transform:translateY(0);
 
-transform:translateY(0);
+    }
 
-}
+    50%{
 
+        transform:translateY(-12px);
 
-50%{
+    }
 
-transform:translateY(-20px);
+    100%{
 
-}
+        transform:translateY(0);
 
-
-100%{
-
-transform:translateY(0);
-
-}
-
+    }
 
 }
 
+.float{
 
-
-
-
-/* ===============================
-   GLOW EFFECT
-================================ */
-
-
-.glow{
-
-animation:glow 2s infinite alternate;
+    animation:floating 4s ease-in-out infinite;
 
 }
 
 
 
-@keyframes glow{
-
-
-from{
-
-box-shadow:
-
-0 0 10px rgba(255,213,79,.4);
-
-}
-
-
-to{
-
-box-shadow:
-
-0 0 35px rgba(255,213,79,.9);
-
-}
-
-
-}
-
-
-
-
-
-/* ===============================
-   PULSE BUTTON
-================================ */
-
-
-.pulse{
-
-animation:pulse 2s infinite;
-
-}
-
-
+/*==================================
+  PULSE
+==================================*/
 
 @keyframes pulse{
 
+    0%{
 
-0%{
+        transform:scale(1);
 
-transform:scale(1);
+    }
 
-}
+    50%{
 
+        transform:scale(1.05);
 
-50%{
+    }
 
-transform:scale(1.05);
+    100%{
 
-}
+        transform:scale(1);
 
-
-100%{
-
-transform:scale(1);
-
-}
-
+    }
 
 }
 
+.pulse{
 
-
-
-
-/* ===============================
-   SHIMMER EFFECT
-================================ */
-
-
-.shimmer{
-
-position:relative;
-
-overflow:hidden;
+    animation:pulse 2.5s infinite;
 
 }
 
 
 
-.shimmer::after{
-
-
-content:"";
-
-position:absolute;
-
-top:0;
-
-left:-100%;
-
-width:50%;
-
-height:100%;
-
-
-background:
-
-linear-gradient(
-
-120deg,
-
-transparent,
-
-rgba(255,255,255,.8),
-
-transparent
-
-);
-
-
-animation:shimmer 3s infinite;
-
-
-}
-
-
-
-@keyframes shimmer{
-
-
-100%{
-
-left:150%;
-
-}
-
-
-}
-
-
-
-
-/* ===============================
-   CARD HOVER 3D
-================================ */
-
-
-.hover-3d{
-
-transition:.5s;
-
-}
-
-
-
-.hover-3d:hover{
-
-
-transform:
-
-translateY(-15px)
-
-rotateX(5deg)
-
-rotateY(-5deg);
-
-
-}
-
-
-
-
-
-/* ===============================
-   BADGE UNLOCK ANIMATION
-================================ */
-
-
-.unlock{
-
-
-animation:
-
-unlock 1s ease;
-
-}
-
-
-
-@keyframes unlock{
-
-
-0%{
-
-transform:
-
-scale(.5)
-
-rotate(-180deg);
-
-
-opacity:0;
-
-}
-
-
-100%{
-
-transform:
-
-scale(1)
-
-rotate(0);
-
-
-opacity:1;
-
-}
-
-
-}
-
-
-
-
-
-/* ===============================
-   COIN ROTATION
-================================ */
-
-
-.coin-spin{
-
-
-animation:
-
-spin 5s linear infinite;
-
-
-}
-
-
+/*==================================
+  SPIN
+==================================*/
 
 @keyframes spin{
 
+    from{
 
-from{
+        transform:rotate(0deg);
 
-transform:rotateY(0deg);
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.spin{
+
+    animation:spin 12s linear infinite;
+
+}/*==================================================
+  MUNNEXT ANIMATIONS v1.0
+  PART 2
+==================================================*/
+
+
+/*==================================
+  GLOW EFFECT
+==================================*/
+
+@keyframes glow{
+
+    0%{
+        box-shadow:0 0 10px rgba(255,213,79,.20);
+    }
+
+    50%{
+        box-shadow:
+        0 0 30px rgba(255,213,79,.55),
+        0 0 60px rgba(255,213,79,.25);
+    }
+
+    100%{
+        box-shadow:0 0 10px rgba(255,213,79,.20);
+    }
+
+}
+
+.glow{
+
+    animation:glow 2.5s infinite;
 
 }
 
 
-to{
+/*==================================
+  SHIMMER
+==================================*/
 
-transform:rotateY(360deg);
+.shimmer{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shimmer::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.55),
+        transparent
+    );
+
+}
+
+.shimmer:hover::after{
+
+    animation:shimmerMove .9s ease;
+
+}
+
+@keyframes shimmerMove{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:140%;
+
+    }
 
 }
 
 
-}
+/*==================================
+  RIPPLE BUTTON
+==================================*/
 
+.ripple{
 
+    position:relative;
 
-
-
-/* ===============================
-   SUCCESS CELEBRATION
-================================ */
-
-
-.success{
-
-
-animation:
-
-success .8s ease;
-
+    overflow:hidden;
 
 }
 
+.ripple::before{
 
+    content:"";
 
-@keyframes success{
+    position:absolute;
 
+    width:20px;
 
-0%{
+    height:20px;
 
-transform:scale(.8);
+    border-radius:50%;
 
-}
+    background:rgba(255,255,255,.5);
 
+    transform:scale(0);
 
-50%{
-
-transform:scale(1.15);
-
-}
-
-
-100%{
-
-transform:scale(1);
+    opacity:0;
 
 }
 
+.ripple:hover::before{
+
+    animation:rippleEffect .8s;
 
 }
 
+@keyframes rippleEffect{
 
+    0%{
 
+        transform:scale(0);
 
+        opacity:.8;
 
-/* ===============================
-   TEXT GRADIENT
-================================ */
+    }
 
+    100%{
 
-.gradient-text{
+        transform:scale(15);
 
+        opacity:0;
 
-background:
-
-linear-gradient(
-
-90deg,
-
-#0D47A1,
-
-#1565C0,
-
-#FFD54F
-
-);
-
-
--webkit-background-clip:text;
-
-color:transparent;
-
+    }
 
 }
 
 
+/*==================================
+  LIFT HOVER
+==================================*/
+
+.lift{
+
+    transition:.35s ease;
+
+}
+
+.lift:hover{
+
+    transform:translateY(-12px);
+
+}
 
 
+/*==================================
+  SCALE HOVER
+==================================*/
 
-/* ===============================
-   PAGE LOADER
-================================ */
+.scale{
 
+    transition:.35s ease;
 
-.loader{
+}
 
+.scale:hover{
 
-width:60px;
+    transform:scale(1.05);
 
-height:60px;
-
-border-radius:50%;
-
-
-border:
-
-6px solid #e3f2fd;
+}
 
 
-border-top-color:#0D47A1;
+/*==================================
+  ROTATE HOVER
+==================================*/
+
+.rotate{
+
+    transition:.35s ease;
+
+}
+
+.rotate:hover{
+
+    transform:rotate(-3deg);
+
+}
 
 
-animation:
+/*==================================
+  ICON BOUNCE
+==================================*/
 
-loader 1s linear infinite;
+@keyframes iconBounce{
 
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    30%{
+
+        transform:translateY(-10px);
+
+    }
+
+    60%{
+
+        transform:translateY(4px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.icon-bounce:hover{
+
+    animation:iconBounce .6s;
+
+}
+
+
+/*==================================
+  SHAKE
+==================================*/
+
+@keyframes shake{
+
+    0%,100%{
+
+        transform:translateX(0);
+
+    }
+
+    20%{
+
+        transform:translateX(-4px);
+
+    }
+
+    40%{
+
+        transform:translateX(4px);
+
+    }
+
+    60%{
+
+        transform:translateX(-4px);
+
+    }
+
+    80%{
+
+        transform:translateX(4px);
+
+    }
+
+}
+
+.shake:hover{
+
+    animation:shake .45s;
+
+}
+
+
+/*==================================
+  BUTTON PRESS
+==================================*/
+
+.press{
+
+    transition:.15s;
+
+}
+
+.press:active{
+
+    transform:scale(.96);
+
+}/*==================================================
+  MUNNEXT ANIMATIONS v1.0
+  PART 3
+==================================================*/
+
+
+/*==================================
+  ANIMATED GRADIENT
+==================================*/
+
+.gradient-animation{
+
+    background:linear-gradient(
+        -45deg,
+        #0D47A1,
+        #1565C0,
+        #42A5F5,
+        #FFD54F
+    );
+
+    background-size:400% 400%;
+
+    animation:gradientMove 12s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
 
 }
 
 
 
-@keyframes loader{
+/*==================================
+  BACKGROUND FLOAT
+==================================*/
 
+@keyframes backgroundFloat{
 
-to{
+    0%{
 
-transform:rotate(360deg);
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.bg-float{
+
+    animation:backgroundFloat 8s ease-in-out infinite;
 
 }
 
 
+
+/*==================================
+  HEARTBEAT
+==================================*/
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    14%{
+
+        transform:scale(1.08);
+
+    }
+
+    28%{
+
+        transform:scale(1);
+
+    }
+
+    42%{
+
+        transform:scale(1.08);
+
+    }
+
+    70%{
+
+        transform:scale(1);
+
+    }
+
 }
+
+.heartbeat{
+
+    animation:heartbeat 2.5s infinite;
+
+}
+
+
+
+/*==================================
+  LOADING SPINNER
+==================================*/
+
+.spinner{
+
+    width:60px;
+
+    height:60px;
+
+    border:6px solid rgba(13,71,161,.15);
+
+    border-top-color:var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+
+
+/*==================================
+  HERO IMAGE FLOAT
+==================================*/
+
+.hero-image{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+
+
+/*==================================
+  BLUR IN
+==================================*/
+
+@keyframes blurIn{
+
+    from{
+
+        opacity:0;
+
+        filter:blur(10px);
+
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        filter:blur(0);
+
+        transform:scale(1);
+
+    }
+
+}
+
+.blur-in{
+
+    animation:blurIn .8s ease forwards;
+
+}
+
+
+
+/*==================================
+  POP IN
+==================================*/
+
+@keyframes popIn{
+
+    0%{
+
+        opacity:0;
+
+        transform:scale(.6);
+
+    }
+
+    80%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.pop{
+
+    animation:popIn .7s ease;
+
+}
+
+
+
+/*==================================
+  CARD REVEAL
+==================================*/
+
+@keyframes revealCard{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px) scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+.reveal{
+
+    animation:revealCard .9s ease forwards;
+
+}
+
+
+
+/*==================================
+  SOFT SHADOW PULSE
+==================================*/
+
+@keyframes shadowPulse{
+
+    0%{
+
+        box-shadow:0 10px 25px rgba(13,71,161,.12);
+
+    }
+
+    50%{
+
+        box-shadow:0 18px 45px rgba(13,71,161,.25);
+
+    }
+
+    100%{
+
+        box-shadow:0 10px 25px rgba(13,71,161,.12);
+
+    }
+
+}
+
+.shadow-pulse{
+
+    animation:shadowPulse 3s infinite;
+
+}/*==================================================
+  MUNNEXT ANIMATIONS v1.0
+  PART 4 - FINAL
+==================================================*/
+
+
+/*==================================
+  SCROLL REVEAL
+==================================*/
+
+.reveal-scroll{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal-scroll.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*==================================
+  FADE STAGGER
+==================================*/
+
+.stagger>*{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+}
+
+.stagger.active>*:nth-child(1){
+
+    animation:fadeUp .7s .1s forwards;
+
+}
+
+.stagger.active>*:nth-child(2){
+
+    animation:fadeUp .7s .2s forwards;
+
+}
+
+.stagger.active>*:nth-child(3){
+
+    animation:fadeUp .7s .3s forwards;
+
+}
+
+.stagger.active>*:nth-child(4){
+
+    animation:fadeUp .7s .4s forwards;
+
+}
+
+.stagger.active>*:nth-child(5){
+
+    animation:fadeUp .7s .5s forwards;
+
+}
+
+.stagger.active>*:nth-child(6){
+
+    animation:fadeUp .7s .6s forwards;
+
+}
+
+
+/*==================================
+  PAGE FADE
+==================================*/
+
+body{
+
+    animation:pageFade .7s ease;
+
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/*==================================
+  IMAGE HOVER
+==================================*/
+
+.img-hover{
+
+    overflow:hidden;
+
+}
+
+.img-hover img{
+
+    transition:.5s ease;
+
+}
+
+.img-hover:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+/*==================================
+  BUTTON GLOW
+==================================*/
+
+.btn-glow{
+
+    transition:.35s;
+
+}
+
+.btn-glow:hover{
+
+    box-shadow:
+        0 0 20px rgba(255,213,79,.45),
+        0 0 40px rgba(255,213,79,.25);
+
+}
+
+
+/*==================================
+  GLASS HOVER
+==================================*/
+
+.glass-hover{
+
+    transition:.35s;
+
+}
+
+.glass-hover:hover{
+
+    backdrop-filter:blur(28px);
+
+    transform:translateY(-8px);
+
+}
+
+
+/*==================================
+  ROTATING BORDER
+==================================*/
+
+.rotating-border{
+
+    position:relative;
+
+}
+
+.rotating-border::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-2px;
+
+    border-radius:inherit;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        var(--accent),
+        transparent
+    );
+
+    animation:borderRotate 4s linear infinite;
+
+    z-index:-1;
+
+}
+
+@keyframes borderRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/*==================================
+  REDUCED MOTION SUPPORT
+==================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+
+/*==================================
+  END OF FILE
+==================================*/
