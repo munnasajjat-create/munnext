@@ -1,1 +1,814 @@
+/* ==========================================
+   MunNext Premium Education Platform
+   Global Design System v1.0
+========================================== */
 
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root {
+
+    --primary:#0D47A1;
+    --secondary:#1565C0;
+    --accent:#FFD54F;
+
+    --dark:#071A36;
+    --text:#263238;
+
+    --white:#ffffff;
+    --light:#F5F9FF;
+
+    --glass:rgba(255,255,255,0.75);
+
+    --shadow:
+    0 20px 50px rgba(13,71,161,0.15);
+
+    --radius:25px;
+
+    --transition:all .4s ease;
+
+}
+
+
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    background:white;
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+
+
+
+
+/* ==========================================
+   GLOBAL LINKS
+========================================== */
+
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+
+.navbar{
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+
+    padding:18px 8%;
+
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(20px);
+
+
+    box-shadow:
+
+    0 5px 25px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+}
+
+
+.logo span{
+
+    color:var(--accent);
+
+}
+
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+
+.nav-links a{
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+
+
+
+
+.menu-btn{
+
+    display:none;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* ==========================================
+   HERO SYSTEM
+========================================== */
+
+
+.hero{
+
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+    position:relative;
+
+
+    padding:80px 8%;
+
+
+    overflow:hidden;
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #ffffff,
+
+    #e3f2fd
+
+    );
+
+
+}
+
+
+
+.hero::before{
+
+
+    content:"";
+
+    position:absolute;
+
+
+    width:500px;
+
+    height:500px;
+
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    rgba(255,213,79,.5),
+
+    transparent 70%
+
+    );
+
+
+    top:-200px;
+
+    right:-200px;
+
+
+    animation:floating 8s infinite alternate;
+
+
+}
+
+
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+.hero h1{
+
+
+    font-size:clamp(40px,6vw,70px);
+
+
+    line-height:1.1;
+
+
+    font-weight:800;
+
+
+    color:var(--primary);
+
+}
+
+
+
+.hero h1 span{
+
+    color:var(--accent);
+
+}
+
+
+
+.hero p{
+
+
+    max-width:750px;
+
+
+    margin:25px auto;
+
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* ==========================================
+   BUTTON SYSTEM
+========================================== */
+
+
+.btn{
+
+
+    display:inline-block;
+
+
+    padding:15px 40px;
+
+
+    border-radius:50px;
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    var(--primary),
+
+    var(--secondary)
+
+    );
+
+
+    color:white;
+
+
+    font-weight:600;
+
+
+    transition:var(--transition);
+
+
+    box-shadow:
+
+    0 10px 30px rgba(13,71,161,.3);
+
+
+}
+
+
+
+.btn:hover{
+
+
+    transform:
+
+    translateY(-6px)
+
+    scale(1.03);
+
+
+}
+
+
+
+
+
+.btn-yellow{
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #FFD54F,
+
+    #FFB300
+
+    );
+
+
+    color:#333;
+
+}
+
+
+
+
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+
+section{
+
+    padding:90px 8%;
+
+}
+
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.section-title h2{
+
+
+    font-size:45px;
+
+    color:var(--primary);
+
+
+}
+
+
+
+.section-title p{
+
+
+    margin-top:15px;
+
+    color:#666;
+
+}
+
+
+
+
+
+/* ==========================================
+   GLASS CARD SYSTEM
+========================================== */
+
+
+.glass-card{
+
+
+    background:var(--glass);
+
+
+    backdrop-filter:blur(20px);
+
+
+    border-radius:var(--radius);
+
+
+    padding:35px;
+
+
+    box-shadow:var(--shadow);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.5);
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+.glass-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+}
+
+
+
+
+/* ==========================================
+   GRID SYSTEM
+========================================== */
+
+
+.grid{
+
+
+    display:grid;
+
+
+    gap:30px;
+
+}
+
+
+
+.grid-3{
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+}
+
+
+.grid-4{
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+}
+
+
+
+
+/* ==========================================
+   ONLINE CLASS READY COMPONENT
+========================================== */
+
+
+.class-card{
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:white;
+
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+.class-card h3{
+
+    color:var(--primary);
+
+}
+
+
+
+.join-btn{
+
+
+    margin-top:20px;
+
+
+    display:inline-block;
+
+
+    padding:12px 25px;
+
+
+    border-radius:30px;
+
+
+    background:var(--primary);
+
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================================
+   COURSE PAYMENT READY
+========================================== */
+
+
+.price-card{
+
+
+    text-align:center;
+
+
+    background:white;
+
+
+    padding:40px;
+
+
+    border-radius:30px;
+
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+
+.price{
+
+
+    font-size:40px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+}
+
+
+
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+
+footer{
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #061B3A,
+
+    #0D47A1
+
+    );
+
+
+    color:white;
+
+
+    padding:60px 8%;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+/* ==========================================
+   FLOATING ANIMATION
+========================================== */
+
+
+@keyframes floating{
+
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        transform:translateY(40px);
+
+    }
+
+
+}
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+
+@media(max-width:900px){
+
+
+.nav-links{
+
+
+    position:absolute;
+
+
+    top:80px;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    background:white;
+
+
+    flex-direction:column;
+
+
+    text-align:center;
+
+
+    padding:30px;
+
+
+    display:none;
+
+
+}
+
+
+
+.nav-links.active{
+
+    display:flex;
+
+}
+
+
+
+.menu-btn{
+
+    display:block;
+
+}
+
+
+
+.grid-3,
+.grid-4{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:32px;
+
+}
+
+
+
+}
