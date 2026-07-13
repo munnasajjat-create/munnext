@@ -1,634 +1,2262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MunNext | Learn • Grow • Succeed</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>
+MunNext | Learn • Grow • Succeed
+</title>
 
-<style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
+<meta name="description" content="
+MunNext is a modern educational ecosystem for Academic English, Spoken English, IELTS Preparation, Online Classes, Challenges and Student Achievement.
+">
 
-body{
-background:#f5f7fa;
-color:#333;
-}
 
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:rgba(13,71,161,.92);
-backdrop-filter:blur(10px);
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-z-index:1000;
-box-shadow:0 5px 20px rgba(0,0,0,.2);
-}
+<!-- Google Font -->
 
-.logo{
-font-size:30px;
-font-weight:700;
-color:white;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-.logo span{
-color:#FFC107;
-}
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:500;
-transition:.3s;
-}
 
-nav a:hover{
-color:#FFC107;
-}
+<!-- MunNext Premium CSS -->
 
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:40px;
-background:
-linear-gradient(rgba(13,71,161,.82),rgba(21,101,192,.82)),
-url("images/hero.jpg");
-background-size:cover;
-background-position:center;
-color:white;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.hero h1{
-font-size:65px;
-margin-bottom:20px;
-animation:fadeDown 1s;
-}
+<link rel="stylesheet" href="css/components.css">
 
-.hero p{
-font-size:22px;
-max-width:850px;
-margin:auto;
-line-height:1.8;
-animation:fadeUp 1.2s;
-}
+<link rel="stylesheet" href="css/animations.css">
 
-.buttons{
-margin-top:40px;
-}
 
-.btn{
-display:inline-block;
-padding:15px 35px;
-margin:10px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.primary{
-background:#FFC107;
-color:#000;
-}
-
-.primary:hover{
-background:#ffb300;
-transform:translateY(-3px);
-}
-
-.secondary{
-border:2px solid white;
-color:white;
-}
-
-.secondary:hover{
-background:white;
-color:#0D47A1;
-}
-
-.quick-cards{
-margin-top:70px;
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-}
-
-.card{
-background:rgba(255,255,255,.15);
-backdrop-filter:blur(8px);
-padding:25px;
-border-radius:15px;
-width:220px;
-transition:.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-background:rgba(255,255,255,.25);
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-@keyframes fadeDown{
-from{
-opacity:0;
-transform:translateY(-50px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-display:inline-block;
-margin:8px;
-}
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-}
-
-</style>
 
 </head>
 
+
+
 <body>
 
-<header>
+
+
+<!-- ===============================
+     NAVIGATION
+================================ -->
+
+<header class="navbar">
+
 
 <div class="logo">
+
 Mun<span>Next</span>
+
 </div>
 
-<nav>
 
-<a href="index.html">Home</a>
 
-<a href="about.html">About</a>
+<div class="menu-btn">
 
-<a href="courses.html">Courses</a>
+☰
 
-<a href="admission.html">Admission</a>
+</div>
 
-<a href="hall-of-fame.html">Hall of Fame</a>
 
-<a href="results.html">Results</a>
 
-<a href="gallery.html">Gallery</a>
+<nav class="nav-links">
 
-<a href="contact.html">Contact</a>
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="founder.html">
+Founder
+</a>
+
+
+<a href="about.html">
+About
+</a>
+
+
+<a href="courses.html">
+Courses
+</a>
+
+
+<a href="admission.html">
+Admission
+</a>
+
+
+<a href="hall-of-fame.html">
+Hall of Fame
+</a>
+
+
+<a href="achievements.html">
+Achievements
+</a>
+
+
+<a href="challenge.html">
+MunNext Challenge
+</a>
+
+
+<a href="gallery.html">
+Gallery
+</a>
+
+
+<a href="notice.html">
+Notice
+</a>
+
+
+<a href="results.html">
+Results
+</a>
+
+
+<a href="blog.html">
+Blog
+</a>
+
+
+<a href="contact.html">
+Contact
+</a>
+
+
+<a href="login.html">
+Login
+</a>
+
+
 
 </nav>
 
+
+
 </header>
+
+
+
+
+
+<!-- ===============================
+     MAIN CONTENT STARTS NEXT
+================================ -->
+
+<main>
+<!-- ===============================
+     PREMIUM HERO SECTION
+================================ -->
 
 <section class="hero">
 
-<div>
 
-<h1>Learn • Grow • Succeed</h1>
+<div class="hero-content fade-up">
+
+
+<h1>
+
+Where Learning Becomes
+
+<span>
+Achievement
+</span>
+
+</h1>
+
+
 
 <p>
 
-Welcome to <strong>MunNext</strong>, your destination for Academic English,
-Spoken English, IELTS Preparation, Grammar, Writing Skills,
-and modern digital learning.
+Welcome to <strong>MunNext</strong> —
+a next-generation educational ecosystem where students
+learn English, develop skills, earn achievements,
+unlock levels and build their future.
 
 </p>
 
+
+
+
 <div class="buttons">
 
-<a class="btn primary" href="admission.html">
 
-🎓 Apply Now
+<a href="admission.html" class="btn">
+
+🎓 Join MunNext
 
 </a>
 
-<a class="btn secondary" href="courses.html">
+
+
+<a href="courses.html" class="btn btn-yellow">
 
 📚 Explore Courses
 
 </a>
 
-</div>
 
-<div class="quick-cards">
-
-<div class="card">
-
-<h3>📘 Academic English</h3>
-
-<p>Class 6 – HSC</p>
 
 </div>
 
-<div class="card">
 
-<h3>🎤 Spoken English</h3>
 
-<p>Speak with Confidence</p>
 
-</div>
 
-<div class="card">
+<!-- Student Growth Preview -->
 
-<h3>🌍 IELTS</h3>
 
-<p>Band Score Preparation</p>
+<div class="grid grid-3" style="margin-top:60px;">
 
-</div>
 
-<div class="card">
 
-<h3>✍️ Grammar</h3>
+<div class="glass-card hover-3d">
 
-<p>Master English Rules</p>
 
-</div>
+<h3>
 
-</div>
+🎓 Level
 
-</div>
+</h3>
 
-</section>
 
-<!-- PART 2 STARTS HERE -->
-  <!-- ================= WHY CHOOSE MUNNEXT ================= -->
+<h2 class="gradient-text">
 
-<section style="padding:80px 8%;background:#ffffff;">
+Champion
 
-<h2 style="text-align:center;font-size:40px;color:#0D47A1;margin-bottom:20px;">
-Why Choose MunNext?
 </h2>
 
-<p style="text-align:center;font-size:18px;color:#666;max-width:800px;margin:auto;margin-bottom:60px;">
-We believe learning English should be practical, enjoyable, and result-oriented. At MunNext, students receive guidance, motivation, and the tools they need to succeed.
+
+<p>
+
+Level 5 Student Journey
+
 </p>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
-
-<div style="background:#f8fbff;padding:30px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,.08);transition:.3s;">
-<h3>👨‍🏫 Experienced Teaching</h3>
-<p>Interactive English classes focused on understanding, confidence, and academic success.</p>
-</div>
-
-<div style="background:#f8fbff;padding:30px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,.08);transition:.3s;">
-<h3>📚 Modern Learning</h3>
-<p>Digital notes, quizzes, video lessons, and technology-supported learning.</p>
-</div>
-
-<div style="background:#f8fbff;padding:30px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,.08);transition:.3s;">
-<h3>🏆 Hall of Fame</h3>
-<p>Outstanding students are recognized through our Hall of Fame and scholarship showcases.</p>
-</div>
-
-<div style="background:#f8fbff;padding:30px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,.08);transition:.3s;">
-<h3>🎯 Regular Assessment</h3>
-<p>Frequent class tests, feedback, and progress tracking to help students improve.</p>
-</div>
-
-<div style="background:#f8fbff;padding:30px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,.08);transition:.3s;">
-<h3>💬 Spoken English</h3>
-<p>Practice real-life communication skills to become a confident English speaker.</p>
-</div>
-
-<div style="background:#f8fbff;padding:30px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,.08);transition:.3s;">
-<h3>🚀 Future Ready</h3>
-<p>Preparing students for exams, university, careers, and international opportunities.</p>
-</div>
 
 </div>
 
-</section>
 
-<!-- ================= FEATURED COURSES ================= -->
 
-<section style="padding:80px 8%;background:#eef5ff;">
 
-<h2 style="text-align:center;font-size:40px;color:#0D47A1;margin-bottom:50px;">
-Featured Courses
-</h2>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;">
+<div class="glass-card hover-3d">
 
-<div style="background:white;padding:25px;border-radius:15px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.08);">
-<h3>📘 Academic English</h3>
-<p>Class 6–HSC</p>
-<a href="courses.html">Learn More →</a>
-</div>
 
-<div style="background:white;padding:25px;border-radius:15px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.08);">
-<h3>🎤 Spoken English</h3>
-<p>Build Confidence</p>
-<a href="courses.html">Learn More →</a>
-</div>
+<h3>
 
-<div style="background:white;padding:25px;border-radius:15px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.08);">
-<h3>🌍 IELTS Preparation</h3>
-<p>Target Your Dream Band</p>
-<a href="courses.html">Learn More →</a>
-</div>
+⚡ XP Progress
 
-<div style="background:white;padding:25px;border-radius:15px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.08);">
-<h3>✍ Grammar Mastery</h3>
-<p>Strong Foundation</p>
-<a href="courses.html">Learn More →</a>
-</div>
+</h3>
+
+
+
+<div class="xp-bar">
+
+
+<div class="xp-progress"></div>
+
 
 </div>
 
-</section>
 
-<!-- ================= END OF PART 2 ================= -->
-  <!-- ================= HALL OF FAME ================= -->
 
-<section style="padding:80px 8%;background:white;">
+<p>
 
-<h2 style="text-align:center;font-size:40px;color:#0D47A1;">
-🏆 Hall of Fame
-</h2>
+750 / 1000 XP
 
-<p style="text-align:center;color:#666;margin-bottom:50px;">
-Recognising excellence and celebrating achievement.
 </p>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;">
 
-<div style="background:#FFF8E1;padding:30px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h3>🥇 Top Scorers</h3>
-<p>Meet our highest achievers and outstanding performers.</p>
-<a href="top-scorers.html">View Students →</a>
-</div>
-
-<div style="background:#E8F5E9;padding:30px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h3>🎓 Scholarship Winners</h3>
-<p>Students who earned scholarships through hard work.</p>
-<a href="scholarship.html">View Winners →</a>
-</div>
-
-<div style="background:#E3F2FD;padding:30px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h3>⭐ Student of the Month</h3>
-<p>Recognising dedication, discipline and improvement.</p>
-<a href="student-month.html">View →</a>
-</div>
 
 </div>
+
+
+
+
+
+
+<div class="glass-card hover-3d">
+
+
+<h3>
+
+🪙 MunCoins
+
+</h3>
+
+
+<h2>
+
+240
+
+</h2>
+
+
+<p>
+
+Earn by Learning
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</section>
+  <!-- ===============================
+     MUNNEXT ECOSYSTEM
+================================ -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+The MunNext Ecosystem
+</h2>
+
+<p>
+One platform. Multiple learning journeys. Unlimited possibilities.
+</p>
+
+</div>
+
+
+
+
+<div class="grid grid-3">
+
+
+
+<div class="premium-card hover-3d">
+
+
+<div class="icon-box">
+📘
+</div>
+
+
+<h3>
+Academic English
+</h3>
+
+
+<p>
+Master school and college English with structured lessons, grammar practice, writing skills and exam preparation.
+</p>
+
+
+<a href="courses.html" class="btn">
+Explore
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="premium-card hover-3d">
+
+
+<div class="icon-box">
+🎤
+</div>
+
+
+<h3>
+Spoken English
+</h3>
+
+
+<p>
+Build confidence through conversation practice, pronunciation training and real-life communication.
+</p>
+
+
+<a href="courses.html" class="btn">
+Explore
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="premium-card hover-3d">
+
+
+<div class="icon-box">
+🌍
+</div>
+
+
+<h3>
+IELTS Mission
+</h3>
+
+
+<p>
+Prepare for your dream band score with modern strategies, practice tests and expert guidance.
+</p>
+
+
+<a href="courses.html" class="btn">
+Explore
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="premium-card hover-3d">
+
+
+<div class="icon-box">
+🎮
+</div>
+
+
+<h3>
+MunNext Challenge
+</h3>
+
+
+<p>
+Play educational challenges, earn XP, collect MunCoins and unlock achievements.
+</p>
+
+
+<a href="challenge.html" class="btn">
+Play
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="premium-card hover-3d">
+
+
+<div class="icon-box">
+🎥
+</div>
+
+
+<h3>
+Online Classroom
+</h3>
+
+
+<p>
+Join live classes, watch recorded lessons and access digital learning resources.
+</p>
+
+
+<a href="online-class.html" class="btn">
+Join
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="premium-card hover-3d">
+
+
+<div class="icon-box">
+🤖
+</div>
+
+
+<h3>
+AI Learning Assistant
+</h3>
+
+
+<p>
+Future AI-powered learning support for practice, feedback and personalized improvement.
+</p>
+
+
+<a href="#" class="btn">
+Coming Soon
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
 
 </section>
 
-<!-- ================= STATISTICS ================= -->
 
-<section style="padding:80px 8%;background:linear-gradient(135deg,#0D47A1,#1976D2);color:white;">
+  <!-- ===============================
+     COURSE MARKETPLACE
+================================ -->
 
-<h2 style="text-align:center;font-size:40px;margin-bottom:60px;">
-MunNext at a Glance
+<section style="background:#F4F8FF;">
+
+
+<div class="section-title">
+
+
+<h2>
+Premium Learning Programs
 </h2>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;text-align:center;">
 
-<div>
-<h1 style="font-size:60px;color:#FFC107;">Growing</h1>
-<p>Students</p>
-</div>
+<p>
+Choose your learning journey and start building your future.
+</p>
 
-<div>
-<h1 style="font-size:60px;color:#FFC107;">7+</h1>
-<p>Courses</p>
-</div>
-
-<div>
-<h1 style="font-size:60px;color:#FFC107;">100%</h1>
-<p>Dedication</p>
-</div>
-
-<div>
-<h1 style="font-size:60px;color:#FFC107;">∞</h1>
-<p>Dreams</p>
-</div>
 
 </div>
+
+
+
+
+
+<div class="grid grid-3">
+
+
+
+
+
+
+<div class="course-card hover-3d">
+
+
+<div class="course-image">
+
+</div>
+
+
+
+<div class="course-content">
+
+
+<h3>
+Academic English Mastery
+</h3>
+
+
+<p>
+Class 6 - HSC Complete English Support
+</p>
+
+
+
+<ul>
+
+<li>✓ Grammar Mastery</li>
+
+<li>✓ Writing Skills</li>
+
+<li>✓ Exam Preparation</li>
+
+<li>✓ Regular Assessment</li>
+
+</ul>
+
+
+
+<h2 class="course-price">
+
+৳1500
+
+</h2>
+
+
+
+<a href="admission.html" class="btn">
+
+Enroll Now
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="course-card hover-3d">
+
+
+<div class="course-image">
+
+</div>
+
+
+
+<div class="course-content">
+
+
+<h3>
+Spoken English Program
+</h3>
+
+
+<p>
+Speak English with Confidence
+</p>
+
+
+
+<ul>
+
+<li>✓ Speaking Practice</li>
+
+<li>✓ Pronunciation</li>
+
+<li>✓ Conversation Skills</li>
+
+<li>✓ Real Life English</li>
+
+</ul>
+
+
+
+<h2 class="course-price">
+
+৳3000
+
+</h2>
+
+
+
+<a href="admission.html" class="btn">
+
+Enroll Now
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="course-card hover-3d">
+
+
+<div class="course-image">
+
+</div>
+
+
+
+<div class="course-content">
+
+
+<h3>
+IELTS Premium Course
+</h3>
+
+
+<p>
+Complete IELTS Preparation System
+</p>
+
+
+
+<ul>
+
+<li>✓ Listening</li>
+
+<li>✓ Reading</li>
+
+<li>✓ Writing</li>
+
+<li>✓ Speaking</li>
+
+</ul>
+
+
+
+<h2 class="course-price">
+
+৳9999
+
+</h2>
+
+
+
+<a href="admission.html" class="btn btn-yellow">
+
+Join Premium
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</section><!-- ===============================
+     ACHIEVEMENT UNIVERSE
+================================ -->
+
+<section>
+
+
+<div class="section-title">
+
+
+<h2>
+🏆 MunNext Achievement Universe
+</h2>
+
+
+<p>
+Every achievement tells a story. Every student can become a legend.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="grid grid-4">
+
+
+
+
+
+
+<div class="badge-card hover-3d">
+
+
+<div class="badge-icon">
+
+👑
+
+</div>
+
+
+<h3>
+Grammar King
+</h3>
+
+
+<p>
+Master of English Grammar
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="badge-card hover-3d">
+
+
+<div class="badge-icon">
+
+📚
+
+</div>
+
+
+<h3>
+Vocabulary Beast
+</h3>
+
+
+<p>
+Powerful word knowledge
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="badge-card hover-3d">
+
+
+<div class="badge-icon">
+
+⭐
+
+</div>
+
+
+<h3>
+Future Leader
+</h3>
+
+
+<p>
+Leadership and confidence
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="badge-card hover-3d">
+
+
+<div class="badge-icon">
+
+🌍
+
+</div>
+
+
+<h3>
+Global Ambassador
+</h3>
+
+
+<p>
+Representing MunNext worldwide
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
 
 </section>
 
-<!-- ================= LATEST NOTICE ================= -->
 
-<section style="padding:70px 8%;background:#F5F7FA;">
 
-<h2 style="text-align:center;font-size:38px;color:#0D47A1;">
-📢 Latest Notices
+
+
+
+
+<!-- ===============================
+     HALL OF FAME PREVIEW
+================================ -->
+
+<section style="background:#F4F8FF;">
+
+
+
+<div class="section-title">
+
+
+<h2>
+🌟 Hall of Fame
 </h2>
 
-<div style="background:white;padding:25px;border-left:6px solid #FFC107;border-radius:10px;margin-top:40px;box-shadow:0 8px 15px rgba(0,0,0,.08);">
 
-<marquee behavior="scroll" direction="left">
+<p>
+Celebrating outstanding MunNext students.
+</p>
 
-🎓 Admission Open • Scholarship Result Published • Spoken English New Batch Starting Soon • IELTS Registration Open
-
-</marquee>
 
 </div>
+
+
+
+
+
+<div class="grid grid-3">
+
+
+
+
+
+
+<div class="student-card hover-3d">
+
+
+<img src="assets/avatars/mahir.jpg"
+class="student-photo"
+alt="Mahir">
+
+
+<h3 class="student-name">
+
+Mahir
+
+</h3>
+
+
+<p>
+Grammar King
+</p>
+
+
+<p>
+Class 9
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="student-card hover-3d">
+
+
+<img src="assets/avatars/rian.jpg"
+class="student-photo"
+alt="Rian">
+
+
+<h3 class="student-name">
+
+Rian Mahmud Ovi
+
+</h3>
+
+
+<p>
+Vocabulary Beast
+</p>
+
+
+<p>
+Class 8
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="student-card hover-3d">
+
+
+<img src="assets/avatars/yeasin.jpg"
+class="student-photo"
+alt="Yeasin">
+
+
+<h3 class="student-name">
+
+Yeasin Arafat
+
+</h3>
+
+
+<p>
+All-Rounder
+</p>
+
+
+<p>
+Class 8
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<div style="text-align:center;margin-top:50px;">
+
+
+<a href="hall-of-fame.html" class="btn">
+
+
+View Full Hall of Fame 🏆
+
+</a>
+
+
+</div>
+
+
+
+</section>
+  <!-- ===============================
+     ONLINE CLASSROOM
+================================ -->
+
+<section>
+
+
+<div class="section-title">
+
+
+<h2>
+🎥 MunNext Online Classroom
+</h2>
+
+
+<p>
+Learn anytime, anywhere with modern digital learning.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="grid grid-3">
+
+
+
+
+
+<div class="live-class hover-3d">
+
+
+<h3>
+🔴 Live Classes
+</h3>
+
+
+<p>
+Join interactive online classes with expert guidance.
+</p>
+
+
+<span class="live">
+
+LIVE READY
+
+</span>
+
+
+<br><br>
+
+
+<a href="online-class.html" class="btn">
+
+Join Class
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="live-class hover-3d">
+
+
+<h3>
+📺 Recorded Lessons
+</h3>
+
+
+<p>
+Watch previous lessons and revise anytime.
+</p>
+
+
+<span>
+
+24/7 Access
+
+</span>
+
+
+<br><br>
+
+
+<a href="courses.html" class="btn">
+
+Watch Lessons
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="live-class hover-3d">
+
+
+<h3>
+📚 Digital Resources
+</h3>
+
+
+<p>
+Notes, quizzes, PDFs and learning materials.
+</p>
+
+
+<span>
+
+Smart Learning
+
+</span>
+
+
+<br><br>
+
+
+<a href="resources.html" class="btn">
+
+Explore
+
+</a>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
 
 </section>
 
-<!-- PART 4 STARTS HERE --><!-- ================= FOUNDER ================= -->
 
-<section style="padding:80px 8%;background:white;">
 
-<h2 style="text-align:center;font-size:40px;color:#0D47A1;">
-Meet the Founder
+
+
+
+
+<!-- ===============================
+     STUDENT DASHBOARD PREVIEW
+================================ -->
+
+<section style="background:#F4F8FF;">
+
+
+
+<div class="section-title">
+
+
+<h2>
+🎓 Student Growth Dashboard
 </h2>
 
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:40px;margin-top:50px;">
 
-<div style="flex:1;text-align:center;">
+<p>
+Track your learning journey and achievements.
+</p>
 
-<img src="images/founder.jpg"
-style="width:280px;height:280px;border-radius:50%;object-fit:cover;border:8px solid #1976D2;">
 
 </div>
 
-<div style="flex:2;">
 
-<h2>Md. Taherul Islam Munna</h2>
 
-<h4 style="color:#1976D2;">
+
+
+<div class="grid grid-3">
+
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+Student Level
+</h3>
+
+
+<h1 class="gradient-text">
+
+Level 5
+
+</h1>
+
+
+<p>
+Champion
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+Experience Points
+
+</h3>
+
+
+<div class="xp-bar">
+
+
+<div class="xp-progress"></div>
+
+
+</div>
+
+
+<br>
+
+
+<p>
+
+750 / 1000 XP
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+MunCoins 🪙
+
+</h3>
+
+
+<h1 style="color:#FFD54F;">
+
+240
+
+</h1>
+
+
+<p>
+
+Earn by learning
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</section>
+  <!-- ===============================
+     FOUNDER MESSAGE
+================================ -->
+
+<section>
+
+
+<div class="section-title">
+
+
+<h2>
+👨‍🏫 Message from Founder
+</h2>
+
+
+<p>
+The vision behind MunNext.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="premium-card">
+
+
+<div class="grid grid-2">
+
+
+<div style="text-align:center;">
+
+
+<img src="assets/images/founder.jpg"
+class="student-photo"
+alt="Founder">
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<h2 style="color:#0D47A1;">
+
+Md. Taherul Islam Munna
+
+</h2>
+
+
+<h4>
+
 Founder & English Instructor
+
 </h4>
 
+
+
 <p style="margin-top:20px;line-height:1.8;">
-Welcome to MunNext. My vision is to make English learning simple, practical, and enjoyable for every student. Through quality teaching, digital resources, and continuous support, I want to help students achieve academic excellence and build confidence for their future.
+
+
+My vision is to create an educational ecosystem where students do not only learn English but develop confidence, skills and a growth mindset.
+
+
+MunNext is built to help every learner discover their potential and achieve their dreams.
+
+
 </p>
 
-<a href="about.html"
-style="display:inline-block;margin-top:25px;background:#0D47A1;color:white;padding:14px 30px;border-radius:8px;text-decoration:none;">
-Read More
+
+<a href="founder.html" class="btn">
+
+Know More
+
 </a>
 
-</div>
+
 
 </div>
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
-<!-- ================= TESTIMONIALS ================= -->
 
-<section style="padding:80px 8%;background:#EEF5FF;">
 
-<h2 style="text-align:center;font-size:40px;color:#0D47A1;">
-Student Testimonials
+
+
+
+
+
+
+<!-- ===============================
+     PARENT TRUST
+================================ -->
+
+
+<section style="background:#F4F8FF;">
+
+
+
+<div class="section-title">
+
+
+<h2>
+
+❤️ Why Parents Trust MunNext
+
 </h2>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:50px;">
 
-<div style="background:white;padding:25px;border-radius:15px;">
-★★★★★
-<p>"MunNext helped me improve my English and gain confidence."</p>
-<b>— Student</b>
-</div>
+<p>
 
-<div style="background:white;padding:25px;border-radius:15px;">
-★★★★★
-<p>"The classes are interactive and easy to understand."</p>
-<b>— Student</b>
-</div>
+Quality education with personal care.
 
-<div style="background:white;padding:25px;border-radius:15px;">
-★★★★★
-<p>"Highly recommended for Academic English and IELTS."</p>
-<b>— Student</b>
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= GALLERY ================= -->
-
-<section style="padding:80px 8%;background:white;">
-
-<h2 style="text-align:center;font-size:40px;color:#0D47A1;">
-Gallery
-</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:50px;">
-
-<img src="images/gallery1.jpg" style="width:100%;border-radius:12px;">
-<img src="images/gallery2.jpg" style="width:100%;border-radius:12px;">
-<img src="images/gallery3.jpg" style="width:100%;border-radius:12px;">
-
-</div>
-
-<div style="text-align:center;margin-top:40px;">
-
-<a href="gallery.html"
-style="background:#FFC107;color:black;padding:14px 30px;text-decoration:none;border-radius:8px;font-weight:bold;">
-View Gallery
-</a>
-
-</div>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section style="padding:80px 8%;background:#0D47A1;color:white;text-align:center;">
-
-<h2>Ready to Join MunNext?</h2>
-
-<p style="margin:25px auto;max-width:700px;">
-Take the next step toward improving your English skills and achieving academic success.
 </p>
 
-<a href="admission.html"
-style="background:#FFC107;color:black;padding:16px 35px;border-radius:8px;text-decoration:none;font-weight:bold;">
-Apply for Admission
-</a>
+
+</div>
+
+
+
+
+
+
+<div class="grid grid-3">
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+
+📈 Progress Tracking
+
+</h3>
+
+
+<p>
+
+Regular assessments and feedback help parents understand student improvement.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+
+👨‍🏫 Expert Guidance
+
+</h3>
+
+
+<p>
+
+Students receive continuous support, motivation and direction.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+
+🏆 Achievement Culture
+
+</h3>
+
+
+<p>
+
+Students are encouraged through badges, awards and Hall of Fame recognition.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
 
 </section>
 
-<!-- ================= FOOTER ================= -->
 
-<footer style="background:#082B63;color:white;padding:50px 8%;">
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;">
+
+
+
+
+
+
+<!-- ===============================
+     STUDENT REVIEWS
+================================ -->
+
+
+<section>
+
+
+
+<div class="section-title">
+
+
+<h2>
+
+⭐ Student Experiences
+
+</h2>
+
+
+<p>
+
+Real learning. Real improvement.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="grid grid-3">
+
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+★★★★★
+</h3>
+
+
+<p>
+
+"MunNext helped me understand English easily and improved my confidence."
+
+</p>
+
+
+<b>
+
+— MunNext Student
+
+</b>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+
+★★★★★
+
+</h3>
+
+
+<p>
+
+"The classes are enjoyable, practical and different from traditional learning."
+
+</p>
+
+
+<b>
+
+— MunNext Student
+
+</b>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="premium-card">
+
+
+<h3>
+
+★★★★★
+
+</h3>
+
+
+<p>
+
+"I improved my grammar, speaking and exam performance."
+
+</p>
+
+
+<b>
+
+— MunNext Student
+
+</b>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</section>
+  <!-- ===============================
+     MUNNEXT STATISTICS
+================================ -->
+
+
+<section class="stats-section">
+
+
+
+<div class="section-title">
+
+
+<h2>
+
+🚀 MunNext Growth
+
+</h2>
+
+
+<p>
+
+Building a community of confident learners.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="grid grid-4">
+
+
+
+
+
+<div class="stat-card">
+
+
+<h1>
+
+100+
+
+</h1>
+
+
+<p>
+
+Students Learning
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<h1>
+
+7+
+
+</h1>
+
+
+<p>
+
+Learning Programs
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<h1>
+
+50+
+
+</h1>
+
+
+<p>
+
+Achievements Unlocked
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<h1>
+
+∞
+
+</h1>
+
+
+<p>
+
+Future Possibilities
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===============================
+     SOCIAL ACHIEVEMENT SHARING
+================================ -->
+
+
+<section style="background:#F4F8FF;">
+
+
+
+<div class="section-title">
+
+
+<h2>
+
+📢 Share Your MunNext Journey
+
+</h2>
+
+
+<p>
+
+Celebrate achievements and inspire others.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="premium-card share-card">
+
+
+
+<h2>
+
+🏆 I am a MunNext Achiever!
+
+</h2>
+
+
+
+<p>
+
+Students will be able to share their scores, badges and achievements on Facebook, WhatsApp and social media.
+
+</p>
+
+
+
+
+
+<div class="share-buttons">
+
+
+<button class="btn">
+
+Facebook Share
+
+</button>
+
+
+
+<button class="btn btn-yellow">
+
+WhatsApp Share
+
+</button>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===============================
+     FINAL ADMISSION CTA
+================================ -->
+
+
+<section class="cta-section">
+
+
+
+<h1>
+
+Ready to Start Your MunNext Journey?
+
+</h1>
+
+
+
+<p>
+
+Join MunNext and transform learning into achievement.
+
+</p>
+
+
+
+
+<a href="admission.html" class="btn btn-yellow">
+
+🎓 Apply Today
+
+</a>
+
+
+
+
+</section>
+  <!-- ===============================
+     PREMIUM FOOTER
+================================ -->
+
+
+<footer class="footer">
+
+
+
+<div class="grid grid-4">
+
+
+
+
 
 <div>
-<h3>MunNext</h3>
-<p>Learn • Grow • Succeed</p>
+
+
+<h2>
+
+Mun<span>Next</span>
+
+</h2>
+
+
+<p>
+
+Learn • Grow • Succeed
+
+</p>
+
+
+<p>
+
+A modern educational ecosystem for English learning, skills development and student achievement.
+
+</p>
+
+
 </div>
+
+
+
+
+
+
+
 
 <div>
-<h3>Quick Links</h3>
-<p><a href="about.html" style="color:white;">About</a></p>
-<p><a href="courses.html" style="color:white;">Courses</a></p>
-<p><a href="hall-of-fame.html" style="color:white;">Hall of Fame</a></p>
-<p><a href="contact.html" style="color:white;">Contact</a></p>
+
+
+<h3>
+
+Explore
+
+</h3>
+
+
+<a href="about.html">
+About
+</a>
+
+
+<a href="courses.html">
+Courses
+</a>
+
+
+<a href="hall-of-fame.html">
+Hall of Fame
+</a>
+
+
+<a href="challenge.html">
+MunNext Challenge
+</a>
+
+
+<a href="achievements.html">
+Achievements
+</a>
+
+
 </div>
+
+
+
+
+
+
+
 
 <div>
-<h3>Contact</h3>
-<p>📍 Keraniganj, Dhaka</p>
-<p>📞 +08801410755594</p>
-<p>✉️ munnasajjat@gmail.com</p>
-</div>
+
+
+<h3>
+
+Student
+
+</h3>
+
+
+<a href="login.html">
+Student Login
+</a>
+
+
+<a href="results.html">
+Results
+</a>
+
+
+<a href="notice.html">
+Notices
+</a>
+
+
+<a href="certificate.html">
+Certificates
+</a>
+
+
+<a href="blog.html">
+Blog
+</a>
+
 
 </div>
 
-<hr style="margin:30px 0;border-color:#ffffff33;">
 
-<p style="text-align:center;">
+
+
+
+
+
+
+<div>
+
+
+<h3>
+
+Contact
+
+</h3>
+
+
+<p>
+
+📍 Keraniganj, Dhaka
+
+</p>
+
+
+<p>
+
+📞 +8801410755594
+
+</p>
+
+
+<p>
+
+✉️ munnasajjat@gmail.com
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
 © 2026 MunNext. All Rights Reserved.
+
 </p>
+
+
+<p>
+
+Designed with ❤️ for learners.
+
+</p>
+
+
+</div>
+
+
+
+
 
 </footer>
 
+
+
+
+
+
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+<script src="js/animations.js"></script>
+
+
+
+
 </body>
+
 </html>
+
